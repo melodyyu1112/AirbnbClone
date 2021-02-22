@@ -27,8 +27,18 @@ body{
   #navbarMenu .nav-link {
     padding: 12px 0;
   }
-  
+nav, .bodycol{
+  padding-left:1%;
+  padding-right:1%;
+}  
+.collapse {
+  background-color: white;
+}
 
+#lookButton, #searchButton {
+  width:100%;
+  border-color:#aaa;
+}
   /*#xlNavbar .navbar-brand, #navbarMenuToggler, #xlNavbar .nav-link {
     line-height: 80px;
   }
@@ -157,6 +167,9 @@ nav {
     text-overflow: ellipses;
   }
 
+  #titleDate{
+    font-size: 15px;
+  }
   .review .user i {
     font-size: 48px;
   }
