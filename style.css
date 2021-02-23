@@ -141,8 +141,6 @@ nav {
   }
   .scrollableRow {
     overflow-x: scroll;
-    margin-left: -24px;
-    margin-right: -24px;
     padding-left: 18px;
     padding-right: 18px;
   }
