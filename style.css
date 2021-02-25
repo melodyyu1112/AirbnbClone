@@ -199,19 +199,19 @@ nav {
 
 .art{
     background-color: rgba(216, 191, 216, 0.103);
-    border-radius: 8px;
+    /*border-radius: 8px;
     position: absolute;
     margin-top: -20px;
     width: 90%;
     margin-left: 5px;
-    height: 80px;
+    height: 80px;*/
 }  
 
-.artcaption{
+/*.artcaption{
     margin-top:20px;
     vertical-align:middle;
     z-index: 2;
-}
+} */
 
 .btn-default{
     color: white;
