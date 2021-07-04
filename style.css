@@ -1,6 +1,22 @@
+
+body {
+  font-family: 'Tajawal', sans-serif;
+}
+
 body{
     background-color: white;
 }
+
+.navbar-brand {
+  position: relative;
+}
+
+a span {
+  position: absolute;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
 
 /*nav */
 @media (min-width: 768px) {
@@ -44,14 +60,13 @@ nav, .bodycol{
   }
   */
 
-  
 
   #xlNavbar .nav-link div:hover {
     border-bottom: 2px solid #fff;
   }
 
   #xlNavbar .nav-link {
-    font-size: 14px;
+    font-size: 14.7px;
   }
   
   #navbarMenuToggler, #navbarMenu .nav-link {
@@ -61,6 +76,11 @@ nav, .bodycol{
   #navbarMenu .nav-link {
     padding: 12px 0;
     font-weight: 300;
+  }
+
+  #news {
+    font-weight: 500;
+    font-size: 25px;
   }
 /* Bootstrap 4 text input with search icon */
 
@@ -103,9 +123,6 @@ nav {
     border-bottom: 1px solid #ddd;
 }*/
 
-.nav-link {
-    font-size:14px;
-}
 
 .dropdown-menu {
     position:absolute;

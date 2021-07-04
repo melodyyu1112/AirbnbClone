@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!--title -->
     <title>Airbnb</title>
   </head>
@@ -19,37 +23,38 @@
   <body>
     <nav class="navbar navbar-expand-md pt-3" id = "navbar">
     <!-- nav for medium-->
-        <div class = "d-flex d-none d-md-flex flex-grow-1" id="xlNavbar" id="xlNavbar">
-          <a class="navbar-brand mr-auto" href="#">
-              <img src="./images/logo.jpg" height="40" class="d-inline-block align-top img-fluid" alt="">
-              News
+      <div class = "d-flex d-none d-md-flex flex-grow-1 pl-3" id="xlNavbar" id="xlNavbar">
+        <a class="navbar-brand mr-auto" href="#">
+          <img src="./images/logo.jpg" height="40" class="d-inline-block align-top img-fluid" alt="">
+          <span class = "mt-2" id = "news">News </span>
+        </a>
+        <div class="navbar-nav d-none d-md-flex ml-auto pt-3">
+          <a class="nav-link pt-1" href="#">About us </a>
+          <a class="nav-link pt-1" href="#">Media Assets</a>
+          <a class="nav-link pt-1" href="#">Contact</a>
+          <a class="nav-link dropdown-toggle mr-2 pt-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-globe"></i>
           </a>
-          <div class="navbar-nav d-none d-md-flex ml-auto pt-2">
-            <a class="nav-link" href="#">About us </a>
-            <a class="nav-link" href="#">Media Assets</a>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link dropdown-toggle mr-2" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-globe"></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">English</a>
-              <div class="dropdown-divider"></div>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">English</a>
+            <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#"> Deutsch</a>
               <a class="dropdown-item" href="#">Espanol</a>
               <a class="dropdown-item" href="#">Francais</a>
               <a class="dropdown-item" href="#">Italiano</a>
               <a class="dropdown-item" href="#">Portugues (Portugal)</a>
+            </div>
           </div>
-          <div class="form-group my-lg-0 has-search d-none d-md-flex align-top">
+          <div class="form-group my-lg-0 has-search d-none d-md-flex align-top pt-2">
             <span class="fa fa-search form-control-feedback fa-s"></span>
-            <span>
-              <input type="text" class="form-control" placeholder="Search"></span>
+            <span class = "pt-1"> <input type="text" class="form-control" placeholder="Search"></span>
           </div> 
         </div>
+      </div>
 
-        <a class="navbar-toggler navbar-brand py-3 pr-0 pl-2 border-0 position-relative collapsed" role="button" data-toggle="collapse" href="#navbarMenu" id="navbarMenuToggler">
-          <i class="fas fa-bars"></i>
-        </a>
+      <a class="navbar-toggler navbar-brand py-3 pr-0 pl-2 border-0 position-relative collapsed" role="button" data-toggle="collapse" href="#navbarMenu" id="navbarMenuToggler">
+        <i class="fas fa-bars"></i>
+      </a>
 
     <div class="collapse navbar-collapse px-4 pb-4 font-weight-light position-absolute" id="navbarMenu">
       <input type="text" class="form-control mb-2 col-12" id = "lookButton" placeholder="What are you looking for?">
@@ -76,70 +81,70 @@
 
 <!--Hero-->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-8 py-md-5 pb-2 topPic">
-          <img src="./images/Airbnb.jpg" class = "img-fluid">
-        </div>
-        <div class="col-12 col-md-4 py-md-5">
-          <p class = "date" id = "titleDate"> February 8, 2021 </p>
-          <h2> An Update on Our Work to Strengthen Our Communities </h2>
-          <p> Airbnb is committed to serving all stakeholders in our community: hosts, guests, communities, employees and shareholders. 
-              Today, we are highlighting recent work to partner with our hosts' and guests' communities. </p>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 py-md-5 pb-2 topPic">
+        <img src="./images/Airbnb.jpg" class = "img-fluid">
       </div>
-      <hr/>
+      <div class="col-12 col-md-4 py-md-5">
+        <p class = "date" id = "titleDate"> February 8, 2021 </p>
+        <h2> An Update on Our Work to Strengthen Our Communities </h2>
+        <p> Airbnb is committed to serving all stakeholders in our community: hosts, guests, communities, employees and shareholders. 
+            Today, we are highlighting recent work to partner with our hosts' and guests' communities. </p>
+      </div>
+    </div>
+    <hr/>
 
 
-      <div class="pt-3 pt-lg-4 pt-xl-5 headings">
-        <h4 class="mb-3">Latest News</h4>
+    <div class="pt-3 pt-lg-4 pt-xl-5 headings">
+      <h4 class="mb-3">Latest News</h4>
+    </div>
+          
+    <div class="row pt-2">
+      <div class="col-12 col-md-3"> 
+        <div class="review">
+          <div class="aspectRatioBox mb-3 rounded" style="background-image: url('./images/airbnbpinklogo.png')">
+          </div>
+          <p class="dates mb-2 text-black-50"> <small>February 12, 2021 </small> </p>
+            <a class = "articleTitle" > Resources for Allyship and Fighting Anti-Asian Discrimination </a>
+            <p class = "caption"> A world where anyone can belong takes all of us. These resources for allyship and fighting anti-Asian 
+                    discrimination were prepared by Airbnb employee resource group Asians@. </p>
+        </div>
       </div>
-            
-      <div class="row pt-2">
-        <div class="col-12 col-md-3"> 
-          <div class="review">
-            <div class="aspectRatioBox mb-3 rounded" style="background-image: url('./images/airbnbpinklogo.png')">
-            </div>
-            <p class="dates mb-2 text-black-50"> <small>February 12, 2021 </small> </p>
-              <a class = "articleTitle" > Resources for Allyship and Fighting Anti-Asian Discrimination </a>
-              <p class = "caption"> A world where anyone can belong takes all of us. These resources for allyship and fighting anti-Asian 
-                      discrimination were prepared by Airbnb employee resource group Asians@. </p>
+          
+      <div class="col-12 col-md-3">
+        <div class="review">
+          <div class="aspectRatioBox mb-3 rounded" style="background-image: url('./images/designerhouse.jpeg')">
           </div>
+          <p class="dates mb-2 text-black-50"> <small>February 10, 2021 </small> </p>
+          <a class = "articleTitle" > Art Inspired Stays Fit for a Superhost, Curated by Kate Russo</a>
+          <p class = "caption"> Here are Kate Russo’s selection of artistic Airbnbs to inspire your next superhosted stay.</p>
         </div>
-            
-        <div class="col-12 col-md-3">
-          <div class="review">
-            <div class="aspectRatioBox mb-3 rounded" style="background-image: url('./images/designerhouse.jpeg')">
-            </div>
-            <p class="dates mb-2 text-black-50"> <small>February 10, 2021 </small> </p>
-            <a class = "articleTitle" > Art Inspired Stays Fit for a Superhost, Curated by Kate Russo</a>
-            <p class = "caption"> Here are Kate Russo’s selection of artistic Airbnbs to inspire your next superhosted stay.</p>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="review">
+          <div class="aspectRatioBox mb-3 rounded" style="background-image: url('./images/NidAmour.jpg')">
           </div>
+          <p class="dates mb-2 text-black-50"> <small>February 9, 2021 </small> </p>
+            <a class = "articleTitle" > From Our Hosts, with Love </a>
+            <p class = "caption"> Celebrate the season of love with Online Experiences and romantic homes to swoon over.</p>
         </div>
-        <div class="col-12 col-md-3">
-          <div class="review">
-            <div class="aspectRatioBox mb-3 rounded" style="background-image: url('./images/NidAmour.jpg')">
-            </div>
-            <p class="dates mb-2 text-black-50"> <small>February 9, 2021 </small> </p>
-              <a class = "articleTitle" > From Our Hosts, with Love </a>
-              <p class = "caption"> Celebrate the season of love with Online Experiences and romantic homes to swoon over.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 ">
-          <div class="review py-5 border pl-4">
-            <h5 class = "follow"> Follow us </h5>
-            <p class="description follow pr-4 "><small>
-                    Get the latest news and travel inspiration.</small></p>
-            <div class="follow">
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-linkedin-in"></i>
-              <i class="fab fa-facebook-f"></i>
-            </div>
+      </div>
+      <div class="col-12 col-md-3 ">
+        <div class="review py-5 border pl-4">
+          <h5 class = "follow"> Follow us </h5>
+          <p class="description follow pr-4 "><small>
+                  Get the latest news and travel inspiration.</small></p>
+          <div class="follow">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-facebook-f"></i>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
     <section class = "meethost" style = "background:black">
       <div class="container mt-4">
